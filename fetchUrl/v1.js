@@ -1,4 +1,3 @@
-
 // Define the URL of the JSON feed
 var feedUrl = "/feeds/posts/default?alt=json&max-results=1000";
 
