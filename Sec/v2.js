@@ -11,17 +11,7 @@
 // Give the parameter a variable name
 var dynamicContent = getParameterByName('token');
 var uri = window.location.toString();
-var Base64 = {
-    _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
-    
-    encode: function (e) {
-        return btoa(unescape(encodeURIComponent(e)));
-    },
-
-    decode: function (e) {
-        return decodeURIComponent(escape(atob(e)));
-    }
-};
+var Base64 = {encode: e => btoa(unescape(encodeURIComponent(e))),decode: e => decodeURIComponent(escape(atob(e)))};
 
 $(document).ready(function () {
 		if (dynamicContent) {
