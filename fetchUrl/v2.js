@@ -1,4 +1,3 @@
-<script type='text/javascript'>
 var feedUrl = "/feeds/posts/default?alt=json&max-results=1000";
 var links = [];
 
@@ -16,4 +15,3 @@ fetch(feedUrl)
  .catch(error => {
     console.error("Error fetching Posts:");
   });
-</script>
